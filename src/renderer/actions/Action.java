@@ -6,8 +6,6 @@ import java.awt.*;
 import java.util.Optional;
 
 public interface Action {
-    Optional<Vector> getVector();
-    Optional<Optional<Color>> getFill();
-    Optional<Color> getPen();
+    ActionType getType();
     String toString();
 }

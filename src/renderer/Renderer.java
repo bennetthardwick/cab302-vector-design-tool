@@ -1,6 +1,8 @@
 package renderer;
 
 import renderer.actions.Action;
+import renderer.actions.Fill;
+import renderer.actions.Pen;
 import renderer.vectors.Vector;
 
 import java.awt.*;
@@ -32,22 +34,25 @@ public class Renderer {
         Optional<Color> fill = Optional.empty();
         Color pen = Color.BLACK;
         for (Action action : actions) {
-            pen = action.getPen().orElse(pen);
-            fill = action.getFill().orElse(fill);
+            switch (action.getType()) {
+                case PEN:
+                    pen = ((Pen) action).getPen();
+                    break;
+                case FILL:
+                    fill = ((Fill) action).getFill();
+                    break;
+                case VECTOR:
+                    Shape shape = ((Vector) action).toShape(width, height);
 
-            if (action.getVector().isPresent()) {
-               Shape shape = action.getVector().get().toShape(width, height);
+                    graphics.setPaint(pen);
+                    graphics.draw(shape);
 
-               graphics.setPaint(pen);
-               graphics.draw(shape);
-
-               if (fill.isPresent()) {
-                   graphics.setPaint(fill.get());
-                   graphics.fill(shape);
-               }
-
+                    if (fill.isPresent()) {
+                        graphics.setPaint(fill.get());
+                        graphics.fill(shape);
+                    }
+                    break;
             }
         }
     }
-
 }
