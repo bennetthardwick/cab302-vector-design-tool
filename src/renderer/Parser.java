@@ -1,10 +1,11 @@
 package renderer;
 
-import renderer.shapes.Shape;
+import renderer.actions.Action;
+
+import java.util.ArrayList;
 
 public class Parser {
-    static Shape[] loadDocument(String document) {
-        Shape[] shapes = {};
-        return shapes;
+    static ArrayList<Action> loadDocument(String document) {
+        return new ArrayList<>();
     }
 }
