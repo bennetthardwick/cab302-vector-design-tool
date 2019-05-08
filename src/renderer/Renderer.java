@@ -3,6 +3,7 @@ package renderer;
 import renderer.actions.Action;
 import renderer.actions.Fill;
 import renderer.actions.Pen;
+import renderer.actions.VectorAction;
 import renderer.vectors.Vector;
 
 import java.awt.*;
@@ -17,7 +18,12 @@ public class Renderer {
     }
 
     public void loadDocument(String vecFile) {
-        this.actions = Parser.loadDocument(vecFile);
+        try {
+            this.actions = Parser.loadDocument(vecFile);
+        } catch (Throwable e) {
+            // #TODO Handle this error on the front end
+            this.actions = new ArrayList<>();
+        }
     }
 
     public String serialize() {
@@ -42,7 +48,7 @@ public class Renderer {
                     fill = ((Fill) action).getFill();
                     break;
                 case VECTOR:
-                    Shape shape = ((Vector) action).toShape(width, height);
+                    Shape shape = ((VectorAction) action).toShape(width, height);
 
                     graphics.setPaint(pen);
                     graphics.draw(shape);

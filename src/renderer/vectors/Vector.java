@@ -1,7 +1,34 @@
 package renderer.vectors;
 
-import java.awt.*;
+import renderer.errors.InvalidVectorArgumentsException;
 
-public interface Vector {
-    Shape toShape(int width, int height);
+import java.awt.*;
+import java.util.ArrayList;
+
+public abstract class Vector {
+    public abstract Shape toShape(int width, int height);
+
+    public static Vector fromType(VectorType type, ArrayList<Float> arguments) throws InvalidVectorArgumentsException {
+        switch (type) {
+            case RECTANGLE:
+                return new Rectangle(arguments);
+            default:
+                throw new InvalidVectorArgumentsException();
+        }
+    }
+
+    public static ArrayList<Float> parseVectorArguments(String arguments) throws InvalidVectorArgumentsException {
+        ArrayList<Float> values = new ArrayList<>();
+
+        try {
+            for (String argument : arguments.split(" ")) {
+                values.add(Float.valueOf(argument));
+            }
+        } catch (NumberFormatException e) {
+            throw new InvalidVectorArgumentsException(arguments);
+        }
+
+        return values;
+
+    }
 }

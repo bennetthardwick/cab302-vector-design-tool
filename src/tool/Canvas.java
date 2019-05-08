@@ -12,6 +12,7 @@ public class Canvas extends JPanel {
     public Canvas() {
         setBackground(Color.WHITE);
         renderer = new Renderer();
+        renderer.loadDocument("RECTANGLE 0.25 0.25 0.5 0.5");
     }
 
     @Override

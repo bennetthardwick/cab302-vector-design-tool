@@ -3,6 +3,11 @@ package renderer.actions;
 import java.awt.*;
 
 public class Pen implements Action {
+
+    public Pen(String arguments) {
+
+    }
+
     public ActionType getType() {
         return ActionType.PEN;
     }
