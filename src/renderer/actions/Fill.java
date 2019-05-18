@@ -5,12 +5,18 @@ import java.util.Optional;
 
 public class Fill implements Action {
 
-    public Fill(String arguments) {
+    private Optional<Color> fill;
 
+    public Fill(String arguments) {
+        if (arguments.startsWith("#")) {
+            fill = Optional.of(Color.decode(arguments));
+        } else {
+            fill = Optional.empty();
+        }
     }
 
     public Optional<Color> getFill() {
-        return Optional.empty();
+        return fill;
     }
 
     public ActionType getType() {
