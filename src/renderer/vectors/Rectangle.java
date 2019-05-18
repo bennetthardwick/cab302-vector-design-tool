@@ -7,10 +7,7 @@ import java.util.ArrayList;
 
 public class Rectangle extends Vector {
 
-    private Float width;
-    private Float height;
-    private Float x;
-    private Float y;
+    private BoundingBox box;
 
     static void ensureValidArguments(ArrayList<Float> arguments) throws InvalidVectorArgumentsException {
         if (arguments.size() != 4) {
@@ -20,18 +17,23 @@ public class Rectangle extends Vector {
 
     public Rectangle(ArrayList<Float> arguments) throws InvalidVectorArgumentsException {
         Rectangle.ensureValidArguments(arguments);
-        x = arguments.get(0);
-        y = arguments.get(1);
-        width = arguments.get(2);
-        height = arguments.get(3);
+
+        box = new BoundingBox(
+                arguments.get(0),
+                arguments.get(1),
+                arguments.get(2),
+                arguments.get(3)
+        );
+
     }
 
     @Override
     public Shape toShape(int width, int height) {
-        var x = Math.round(this.x * width);
-        var y = Math.round(this.y * height);
-        var normWidth = Math.round(this.width * width);
-        var normHeight = Math.round(this.height * height);
-        return new java.awt.Rectangle(x, y, normWidth, normHeight);
+        return new java.awt.Rectangle(
+                Math.round(box.getTopX() * width),
+                Math.round(box.getTopY() * height),
+                Math.round(box.getWidth() * width),
+                Math.round(box.getHeight() * height)
+        );
     }
 }

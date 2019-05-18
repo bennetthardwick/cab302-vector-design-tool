@@ -4,5 +4,6 @@ public enum VectorType {
     RECTANGLE,
     POLYGON,
     ELLIPSE,
-    PLOT
+    PLOT,
+    LINE
 }

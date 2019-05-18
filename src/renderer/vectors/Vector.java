@@ -12,6 +12,14 @@ public abstract class Vector {
         switch (type) {
             case RECTANGLE:
                 return new Rectangle(arguments);
+            case POLYGON:
+                return new Polygon(arguments);
+            case ELLIPSE:
+                return new Ellipse(arguments);
+            case PLOT:
+                return new Plot(arguments);
+            case LINE:
+                return new Line(arguments);
             default:
                 throw new InvalidVectorArgumentsException();
         }
