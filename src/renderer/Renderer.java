@@ -50,13 +50,14 @@ public class Renderer {
                 case VECTOR:
                     Shape shape = ((VectorAction) action).toShape(width, height);
 
-                    graphics.setPaint(pen);
-                    graphics.draw(shape);
-
                     if (fill.isPresent()) {
                         graphics.setPaint(fill.get());
                         graphics.fill(shape);
                     }
+
+                    graphics.setPaint(pen);
+                    graphics.draw(shape);
+
                     break;
             }
         }
