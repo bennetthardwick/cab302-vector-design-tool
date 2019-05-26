@@ -13,11 +13,12 @@ public class Subject<T> {
 
     public void next(T state) {
         this.state = state;
+        this.notifyObservers();
     }
 
     public void notifyObservers() {
         for (Observer observer : observers) {
-            observer.update();
+            observer.update(getValue());
         }
     }
 

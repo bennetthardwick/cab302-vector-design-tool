@@ -1,6 +1,5 @@
 package tool.Observable;
 
-public abstract class Observer<T> {
-    protected Subject<T> subject;
-    public abstract void update();
+public interface Observer<T> {
+    void update(T data);
 }

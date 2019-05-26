@@ -3,6 +3,7 @@ package renderer.vectors;
 import renderer.errors.InvalidVectorArgumentsException;
 
 import java.awt.*;
+import java.awt.Rectangle;
 import java.awt.geom.Line2D;
 import java.util.ArrayList;
 
@@ -22,8 +23,9 @@ public class Plot extends Vector {
 
     @Override
     public Shape toShape(int width, int height) {
-        x = this.x * width;
-        y = this.y * y;
+        var x = this.x * width;
+        var y = this.y * height;
+
         return new Line2D.Float(
                 x,
                 y,

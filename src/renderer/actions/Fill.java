@@ -15,11 +15,24 @@ public class Fill implements Action {
         }
     }
 
+    public void setColor(Color color) {
+        fill = Optional.of(color);
+    }
+
+    public void setNoFill() {
+        fill = Optional.empty();
+    }
+
     public Optional<Color> getFill() {
         return fill;
     }
 
     public ActionType getType() {
         return ActionType.FILL;
+    }
+
+    @Override
+    public String toString() {
+        return "FILL " + (fill.isPresent() ? "#" + Integer.toHexString(fill.get().getRGB()).substring(2) : "NONE");
     }
 }
