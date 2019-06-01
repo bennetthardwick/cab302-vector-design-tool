@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a4ec1a0-6141-49a4-98ad-73e8792aaf68" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/renderer/actions/__tests__/FillTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cab302-vector-design-tool.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cab302-vector-design-tool.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tool/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tool/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/vectors/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/vectors/Line.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/vectors/Polygon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/vectors/Polygon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tool/Canvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tool/Canvas.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,13 +18,13 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.27624494">
+    <splitter split-orientation="horizontal" split-proportion="0.3498212">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/renderer/Renderer.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="378">
+                <state relative-caret-position="315">
                   <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -37,7 +36,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/tool/Menu.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="576">
+                <state relative-caret-position="480">
                   <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -49,8 +48,11 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/tool/App.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="162">
-                  <caret line="9" selection-start-line="9" selection-end-line="9" />
+                <state relative-caret-position="255">
+                  <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -58,7 +60,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="36">
+                <state relative-caret-position="30">
                   <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
                   <folding>
                     <element signature="e#82#83#0" expanded="true" />
@@ -71,7 +73,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/tool/ToolBar.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1746">
+                <state relative-caret-position="1455">
                   <caret line="111" column="70" selection-start-line="111" selection-start-column="70" selection-end-line="111" selection-end-column="70" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -84,10 +86,10 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/renderer/__tests__/RendererTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
+                <state relative-caret-position="300">
                   <caret line="29" selection-start-line="29" selection-end-line="29" />
                   <folding>
                     <element signature="e#1200#1201#0" expanded="true" />
@@ -97,14 +99,47 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/tool/Canvas.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-594">
-                  <caret line="46" column="18" lean-forward="true" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+                <state relative-caret-position="30">
+                  <caret line="2" selection-start-line="2" selection-end-line="2" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/renderer/vectors/Line.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="2" selection-start-line="2" selection-end-line="2" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/renderer/vectors/Polygon.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="327">
+                  <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/renderer/Point.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="75">
+                  <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
                 </state>
               </provider>
             </entry>
@@ -118,8 +153,8 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -149,9 +184,7 @@
         <option value="$PROJECT_DIR$/src/renderer/actions/VectorAction.java" />
         <option value="$PROJECT_DIR$/src/renderer/errors/InvalidActionStringException.java" />
         <option value="$PROJECT_DIR$/src/renderer/errors/InvalidVectorArgumentsException.java" />
-        <option value="$PROJECT_DIR$/src/renderer/vectors/Polygon.java" />
         <option value="$PROJECT_DIR$/src/renderer/vectors/Rectangle.java" />
-        <option value="$PROJECT_DIR$/src/renderer/vectors/Line.java" />
         <option value="$PROJECT_DIR$/src/renderer/vectors/VectorType.java" />
         <option value="$PROJECT_DIR$/src/renderer/vectors/BoundingBox.java" />
         <option value="$PROJECT_DIR$/src/renderer/vectors/Ellipse.java" />
@@ -177,15 +210,18 @@
         <option value="$PROJECT_DIR$/src/renderer/actions/__tests__/PenTest.java" />
         <option value="$PROJECT_DIR$/src/renderer/RendererTest.java" />
         <option value="$PROJECT_DIR$/src/renderer/__tests__/RendererTest.java" />
-        <option value="$PROJECT_DIR$/src/tool/Canvas.java" />
         <option value="$PROJECT_DIR$/src/tool/App.java" />
+        <option value="$PROJECT_DIR$/src/renderer/Point.java" />
+        <option value="$PROJECT_DIR$/src/renderer/vectors/Polygon.java" />
+        <option value="$PROJECT_DIR$/src/tool/Canvas.java" />
+        <option value="$PROJECT_DIR$/src/renderer/vectors/Line.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="9" />
-    <option name="width" value="3840" />
-    <option name="height" value="2151" />
+    <option name="width" value="1920" />
+    <option name="height" value="1071" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -193,6 +229,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -216,6 +253,13 @@
               <item name="cab302-vector-design-tool" type="b2602c69:ProjectViewProjectNode" />
               <item name="cab302-vector-design-tool" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="renderer" type="462c0819:PsiDirectoryNode" />
+              <item name="__tests__" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cab302-vector-design-tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cab302-vector-design-tool" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="tool" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -233,7 +277,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -242,14 +285,16 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559389921757" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.30995476" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -273,25 +318,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.RendererTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="cab302-vector-design-tool" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FillTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cab302-vector-design-tool" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="renderer.actions.__tests__.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="renderer.actions" />
-      <option name="MAIN_CLASS_NAME" value="renderer.actions.FillTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -306,6 +336,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="renderer.actions.__tests__" />
       <option name="MAIN_CLASS_NAME" value="renderer.actions.__tests__.PenTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RendererTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cab302-vector-design-tool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="renderer.__tests__.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="renderer.__tests__" />
+      <option name="MAIN_CLASS_NAME" value="renderer.__tests__.RendererTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -345,11 +390,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RendererTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.RendererTest.serialize" />
         <item itemvalue="JUnit.RendererTest.loadDocument" />
         <item itemvalue="JUnit.PenTest" />
-        <item itemvalue="JUnit.FillTest" />
       </list>
     </recent_temporary>
   </component>
@@ -390,7 +435,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="9" width="3840" height="2151" extended-state="0" />
+    <frame x="0" y="9" width="1920" height="1071" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -398,15 +443,15 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.2170706" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.10554371" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32952285" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="2" weight="0.32843137" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.328125" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32990196" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.20343137" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.203125" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.30467197" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -425,13 +470,7 @@
     <entry file="file://$PROJECT_DIR$/src/MainTest.java" />
     <entry file="file://$PROJECT_DIR$/src/renderer/shapes/Rectangle.java" />
     <entry file="file://$PROJECT_DIR$/src/renderer/shapes/Vector.java" />
-    <entry file="jrt:///home/bennett/Downloads/idea-IC-191.6707.61/jre64!/java.base/java/lang/Object.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="55" column="87" selection-start-line="55" selection-start-column="87" selection-end-line="55" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jrt:///home/bennett/Downloads/idea-IC-191.6707.61/jre64!/java.base/java/lang/Object.class" />
     <entry file="file://$PROJECT_DIR$/src/renderer/errors/InvalidActionTypeStringException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -439,30 +478,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="jrt:///home/bennett/Downloads/idea-IC-191.6707.61/jre64!/java.base/java/lang/Float.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jrt:///home/bennett/Downloads/idea-IC-191.6707.61/jre64!/java.base/java/lang/Float.class" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="jrt:///home/bennett/Downloads/idea-IC-191.6707.61/jre64!/java.base/java/util/EventListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jrt:///home/bennett/Downloads/idea-IC-191.6707.61/jre64!/java.desktop/java/awt/event/ItemListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jrt:///home/bennett/Downloads/idea-IC-191.6707.61/jre64!/java.base/java/util/EventListener.class" />
+    <entry file="jrt:///home/bennett/Downloads/idea-IC-191.6707.61/jre64!/java.desktop/java/awt/event/ItemListener.class" />
     <entry file="file://$PROJECT_DIR$/src/renderer/errors/InvalidVectorArgumentsException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -470,13 +491,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jrt:///home/bennett/Downloads/idea-IC-191.6707.61/jre64!/java.base/java/lang/String.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11178">
-          <caret line="689" column="25" selection-start-line="689" selection-start-column="25" selection-end-line="689" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jrt:///home/bennett/Downloads/idea-IC-191.6707.61/jre64!/java.base/java/lang/String.class" />
     <entry file="file://$PROJECT_DIR$/src/renderer/errors/InvalidActionStringException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -485,24 +500,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tool/Events/EventType.java" />
-    <entry file="jrt:///home/bennett/Downloads/idea-IC-191.6707.61/jre64!/java.base/java/util/function/Consumer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jrt:///home/bennett/Downloads/idea-IC-191.6707.61/jre64!/java.base/java/util/function/Consumer.class" />
     <entry file="file://$PROJECT_DIR$/src/tool/RendererUpdater.java" />
-    <entry file="file://$PROJECT_DIR$/src/renderer/vectors/Line.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tool/Observable/Subject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -625,16 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/vectors/Polygon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/renderer/actions/__tests__/PenTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -686,7 +675,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/renderer/Renderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
+        <state relative-caret-position="315">
           <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -696,7 +685,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tool/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
+        <state relative-caret-position="480">
           <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -706,7 +695,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
+        <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
             <element signature="e#82#83#0" expanded="true" />
@@ -717,29 +706,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tool/ToolBar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1746">
+        <state relative-caret-position="1455">
           <caret line="111" column="70" selection-start-line="111" selection-start-column="70" selection-end-line="111" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/__tests__/RendererTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#1200#1201#0" expanded="true" />
-            <element signature="e#1259#1260#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tool/Canvas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-594">
-          <caret line="46" column="18" lean-forward="true" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -748,8 +716,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tool/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="255">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/vectors/Polygon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tool/Canvas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/vectors/Line.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/__tests__/RendererTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#1200#1201#0" expanded="true" />
+            <element signature="e#1259#1260#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -815,6 +834,17 @@
         </settings>
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
         <settings>
           <splitter-proportions>
             <option name="proportions">

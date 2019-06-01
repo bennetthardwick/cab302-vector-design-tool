@@ -1,9 +1,8 @@
 package tool;
 
-import javafx.util.Pair;
 import renderer.Parser;
+import renderer.Point;
 import renderer.Renderer;
-import renderer.vectors.Plot;
 import renderer.vectors.VectorType;
 import tool.Events.UpdateEvent;
 import tool.Observable.Observer;
@@ -14,7 +13,6 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.File;
 import java.io.FileWriter;
-import java.nio.file.Path;
 import java.util.ArrayList;
 
 public class Canvas extends JPanel implements Observer<UpdateEvent> {
@@ -22,7 +20,7 @@ public class Canvas extends JPanel implements Observer<UpdateEvent> {
     Renderer renderer;
     JPanel container;
 
-    private ArrayList<Pair<Float, Float>> points;
+    private ArrayList<Point<Float>> points;
 
     private VectorType type;
 
@@ -57,11 +55,11 @@ public class Canvas extends JPanel implements Observer<UpdateEvent> {
 
                 Float x = mouseEvent.getX() / (float) Canvas.super.getWidth();
                 Float y = mouseEvent.getY() / (float) Canvas.super.getHeight();
-                Pair<Float, Float> point = new Pair<>(x, y);
+                Point<Float> point = new Point<>(x, y);
 
                 if (type == VectorType.PLOT) {
                     try {
-                        renderer.updatePreview(Parser.createActionWithArguments(VectorType.PLOT.toString() + " " + point.getKey() + " " + point.getValue()));
+                        renderer.updatePreview(Parser.createActionWithArguments(VectorType.PLOT.toString() + " " + point.x + " " + point.y));
                         Canvas.super.repaint();
                         renderer.commitPreview();
                     } catch (Throwable e) {
@@ -107,12 +105,12 @@ public class Canvas extends JPanel implements Observer<UpdateEvent> {
                 Float y = mouseEvent.getY() / (float) Canvas.super.getHeight();
 
                 points.remove(points.size() - 1);
-                points.add(new Pair<>(x, y));
+                points.add(new Point<>(x, y));
 
                 String action = type.toString();
 
-                for (Pair<Float, Float> point : points ) {
-                    action += " " + point.getKey() + " " + point.getValue();
+                for (Point<Float> point : points ) {
+                    action += " " + point.x + " " + point.y;
                 }
 
                 try {
