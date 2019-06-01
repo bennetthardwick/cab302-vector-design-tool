@@ -1,0 +1,2 @@
+default:
+	pdflatex report.tex
