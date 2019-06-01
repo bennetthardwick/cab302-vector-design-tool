@@ -59,7 +59,7 @@ public class Renderer {
     }
 
     public void setFill(Color fill) {
-        if (actions.get(actions.size() - 1).getType() == ActionType.PEN) {
+        if (actions.size() > 0 && actions.get(actions.size() - 1).getType() == ActionType.PEN) {
             ((Fill) actions.get(actions.size() - 1)).setColor(fill);
         } else {
             Fill f = new Fill("NONE");
@@ -69,7 +69,7 @@ public class Renderer {
     }
 
     public void setNoFill() {
-        if (actions.get(actions.size() - 1).getType() == ActionType.FILL) {
+        if (actions.size() > 0 && actions.get(actions.size() - 1).getType() == ActionType.FILL) {
             ((Fill) actions.get(actions.size() - 1)).setNoFill();
         } else {
             Fill f = new Fill("NONE");
