@@ -36,6 +36,10 @@ public class ToolBar extends JToolBar implements ActionListener {
         addSeparator();
     }
 
+    /**
+     * Attach an observer to the subject
+     * @param observer
+     */
     public void attach(Observer<UpdateEvent> observer) {
         this.subject.attach(observer);
     }

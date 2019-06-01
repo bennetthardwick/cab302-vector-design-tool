@@ -5,6 +5,10 @@ import renderer.vectors.VectorType;
 import java.awt.*;
 import java.io.File;
 
+/**
+ * A class representing transformations of the renderer.
+ * Such as "undo", "set fill", etc.
+ */
 public class UpdateEvent {
 
     public UpdateEventType type;

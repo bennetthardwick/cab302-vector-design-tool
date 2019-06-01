@@ -6,6 +6,9 @@ import java.awt.*;
 import java.awt.geom.Ellipse2D;
 import java.util.ArrayList;
 
+/**
+ * An ellipse vector
+ */
 public class Ellipse extends Vector {
 
     private BoundingBox box;

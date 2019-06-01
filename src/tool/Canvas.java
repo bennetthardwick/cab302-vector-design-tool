@@ -17,11 +17,9 @@ import java.util.ArrayList;
 
 public class Canvas extends JPanel implements Observer<UpdateEvent> {
 
-    Renderer renderer;
-    JPanel container;
-
+    private Renderer renderer;
+    private JPanel container;
     private ArrayList<Point<Float>> points;
-
     private VectorType type;
 
     @Override
@@ -39,6 +37,11 @@ public class Canvas extends JPanel implements Observer<UpdateEvent> {
         return new Dimension(s, s);
     }
 
+    /**
+     * A blank component that uses a Renderer to display an image.
+     * Maintains a 1:1 aspect ratio.
+     * @param renderer
+     */
     public Canvas(Renderer renderer) {
         container = new JPanel(new GridBagLayout());
         container.setBackground(Color.GRAY);
@@ -147,6 +150,10 @@ public class Canvas extends JPanel implements Observer<UpdateEvent> {
         } catch (Throwable e) { }
     }
 
+    /**
+     * Update the state of the Renderer based on certain events
+     * @param e an update event
+     */
     @Override
     public void update(UpdateEvent e) {
         switch (e.type) {

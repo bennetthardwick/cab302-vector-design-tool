@@ -3,6 +3,9 @@ package renderer.actions;
 import java.awt.*;
 import java.util.Optional;
 
+/**
+ * The "FILL" action
+ */
 public class Fill implements Action {
 
     private Optional<Color> fill;

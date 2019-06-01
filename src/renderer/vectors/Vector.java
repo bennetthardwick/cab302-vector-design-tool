@@ -5,9 +5,25 @@ import renderer.errors.InvalidVectorArgumentsException;
 import java.awt.*;
 import java.util.ArrayList;
 
+/**
+ * The base class for the different types of "Vector" action.
+ */
 public abstract class Vector {
+    /**
+     * Convert a vector to a shape
+     * @param width width of the canvas
+     * @param height height of the canvas
+     * @return
+     */
     public abstract Shape toShape(int width, int height);
 
+    /**
+     * Create a Vector instance based on the VectorType
+     * @param type the type of Vector
+     * @param arguments the arguments
+     * @return an instance of Vector
+     * @throws InvalidVectorArgumentsException
+     */
     public static Vector fromType(VectorType type, ArrayList<Float> arguments) throws InvalidVectorArgumentsException {
         switch (type) {
             case RECTANGLE:
@@ -25,6 +41,12 @@ public abstract class Vector {
         }
     }
 
+    /**
+     * Convert a string of arguments to a list of arguments
+     * @param arguments
+     * @return
+     * @throws InvalidVectorArgumentsException
+     */
     public static ArrayList<Float> parseVectorArguments(String arguments) throws InvalidVectorArgumentsException {
         ArrayList<Float> values = new ArrayList<>();
 

@@ -7,6 +7,9 @@ import java.awt.*;
 import java.awt.geom.Line2D;
 import java.util.ArrayList;
 
+/**
+ * A line vector
+ */
 public class Line extends Vector {
 
     Point<Float> from;

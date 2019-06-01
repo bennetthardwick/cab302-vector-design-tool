@@ -6,6 +6,10 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.Optional;
 
+/**
+ * The class that is in charge of rendering a "vec" file
+ * to a Graphics2D object.
+ */
 public class Renderer {
     private ArrayList<Action> actions;
     private Action preview;
@@ -14,6 +18,10 @@ public class Renderer {
         actions = new ArrayList<>();
     }
 
+    /**
+     * Load a "vec" file into the current Renderer instance
+     * @param vecFile
+     */
     public void loadDocument(String vecFile) {
         try {
             this.actions = Parser.loadDocument(vecFile);
@@ -25,6 +33,10 @@ public class Renderer {
         }
     }
 
+    /**
+     * Serialize the actions to a list of ActionStrings
+     * @return
+     */
     public ArrayList<String> serialize() {
         ArrayList<String> lines = new ArrayList<>();
 
@@ -35,22 +47,35 @@ public class Renderer {
         return lines;
     }
 
+    /**
+     * Remove the latest action
+     */
     public void undo() {
         if (actions.size() > 0) {
             actions.remove(actions.size() - 1);
         }
     }
 
+    /**
+     * Remove the preview Action from the Renderer
+     */
     public void discardPreview() {
         if (preview != null) {
             preview = null;
         }
     }
 
+    /**
+     * Add an action to act as a preview
+     * @param action
+     */
     public void updatePreview(Action action) {
         preview = action;
     }
 
+    /**
+     * Take the preview (if it exists) and add it to the list of actions
+     */
     public void commitPreview() {
         if (preview != null) {
             actions.add(preview);
@@ -58,6 +83,10 @@ public class Renderer {
         }
     }
 
+    /**
+     * Set the fill color
+     * @param fill the fill color
+     */
     public void setFill(Color fill) {
         if (actions.size() > 0 && actions.get(actions.size() - 1).getType() == ActionType.PEN) {
             ((Fill) actions.get(actions.size() - 1)).setColor(fill);
@@ -68,6 +97,9 @@ public class Renderer {
         }
     }
 
+    /**
+     * Set the "fill color" to "NONE"
+     */
     public void setNoFill() {
         if (actions.size() > 0 && actions.get(actions.size() - 1).getType() == ActionType.FILL) {
             ((Fill) actions.get(actions.size() - 1)).setNoFill();
@@ -78,6 +110,10 @@ public class Renderer {
         }
     }
 
+    /**
+     * Set the pen color
+     * @param pen
+     */
     public void setPen(Color pen) {
         if (actions.get(actions.size() - 1).getType() == ActionType.PEN) {
             ((Pen) actions.get(actions.size() - 1)).setPen(pen);
@@ -88,6 +124,12 @@ public class Renderer {
         }
     }
 
+    /**
+     * Render the current list of actions to a Graphics2D object
+     * @param graphics the object to draw the actions to
+     * @param width the width of the object
+     * @param height ths height of the object
+     */
     public void render(Graphics2D graphics, int width, int height) {
         Optional<Color> fill = Optional.empty();
         Color pen = Color.BLACK;

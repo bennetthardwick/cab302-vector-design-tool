@@ -8,7 +8,17 @@ import renderer.vectors.VectorType;
 
 import java.util.ArrayList;
 
+/**
+ * The class that converts the string representation of acions into actions.
+ * @see Action
+ */
 public class Parser {
+    /**
+     * Create a list of actions from a "vec" document string
+     * @param document the vec document
+     * @return the list of actions
+     * @throws InvalidActionStringException
+     */
     public static ArrayList<Action> loadDocument(String document) throws InvalidActionStringException {
         var actions = new ArrayList<Action>();
 
@@ -21,6 +31,12 @@ public class Parser {
         return actions;
     }
 
+    /**
+     * Create a single Action from a "vec" string
+     * @param actionString the single action, e.g. "PLOT 0.5 0.5"
+     * @return an Action
+     * @throws InvalidActionStringException
+     */
     public static Action createActionWithArguments(String actionString) throws InvalidActionStringException {
         String[] parts = actionString.split(" ", 2);
 
@@ -35,6 +51,13 @@ public class Parser {
         throw new InvalidActionStringException(actionString);
     }
 
+    /**
+     * Create an action based on type and arguments
+     * @param actionTypeString type, e.g. "PLOT"
+     * @param arguments arguments, e.g. "0.5, 0.5"
+     * @return an Action
+     * @throws InvalidActionTypeStringException
+     */
     public static Action createActionFromType(String actionTypeString, String arguments) throws InvalidActionTypeStringException {
 
         ActionType actionType;

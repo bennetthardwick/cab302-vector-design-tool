@@ -18,6 +18,9 @@ public class Menu extends JMenuBar implements ActionListener {
     private JMenuItem exit;
     private Subject<UpdateEvent> subject;
 
+    /**
+     * The menu bar with options like "File", "Open", etc.
+     */
     public Menu() {
         this.createFileActions();
         subject = new Subject<>();
@@ -42,6 +45,10 @@ public class Menu extends JMenuBar implements ActionListener {
         this.add(fileMenu);
     }
 
+    /**
+     * Attach an observer to the subject
+     * @param observer
+     */
     public void attach(Observer<UpdateEvent> observer) {
         subject.attach(observer);
     }

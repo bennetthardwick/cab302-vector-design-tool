@@ -2,6 +2,9 @@ package renderer.actions;
 
 import java.awt.*;
 
+/**
+ * The "PEN" action
+ */
 public class Pen implements Action {
 
     Color pen;

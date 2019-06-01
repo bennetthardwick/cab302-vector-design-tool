@@ -1,5 +1,8 @@
 package renderer.vectors;
 
+/**
+ * The bounding box of an object, based on the start and end points
+ */
 public class BoundingBox {
 
     private Float x1;
