@@ -18,7 +18,7 @@ import java.util.ArrayList;
 public class Canvas extends JPanel implements Observer<UpdateEvent> {
 
     private Renderer renderer;
-    private JPanel container;
+    public JPanel container;
     private ArrayList<Point<Float>> points;
     private VectorType type;
 

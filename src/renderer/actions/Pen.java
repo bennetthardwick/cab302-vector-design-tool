@@ -7,7 +7,7 @@ import java.awt.*;
  */
 public class Pen implements Action {
 
-    Color pen;
+    private Color pen;
 
     public Pen(String arguments) {
         if (arguments.startsWith("#")) {

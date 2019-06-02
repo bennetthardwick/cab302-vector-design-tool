@@ -1,1 +1,22 @@
 \section{Software Architecture}
+
+The application was created as two separate layers - the presentation-layer and the data-layer.
+Namely, the tool (GUI) and the renderer.
+\\\\
+The ``App'' class inside the ``tool'' package is the entry to the application.
+Instantiating this class will create a self-contained, fully featured ``Vector Tool'' window.
+The ``App'' class is a JFrame which contains;
+the ``MenuBar'' class which is a menu bar,
+the ``Toolbar'' class which is the tool bar which holds all the options for what vector to draw and such,
+and finally the ``Canvas'' class which is responsible for drawing vectors to the screen.
+\\\\
+The ``Canvas'' class acts an abstraction over the ``Renderer'' class, which is responsible for drawing the actions to the canvas.
+As the ``Canvas'' is the main interaction with the renderer, there is a message channel between the ``MenuBar'' and the ``ToolBar'', and the ``Canvas''.
+This message channel follows the ``Subject-Observer'' pattern and sends an instance of the ``UpdateEvent'' class from the bars to the ``Canvas''.
+\\\\
+The ``Renderer'' holds the state for the application in the form of a list of classes that inherit from ``Action''.
+The ``Action'' interface is used in three places, the ``Fill'' class, the ``Pen'' class and in the ``VectorAction'' class.
+\\\\
+The ``VectorAction'' class contains an instance of the abstract ``Vector'' class.
+The ``Vector'' class is responsible for parsing arguments of a ``VEC language'' statement and converting it into pixels.
+The ``Vector'' class is extended by ``Ellipse'', ``Line'', ``Plot'', ``Polygon'' and ``Rectangle'' which are responsible for rendering their respective actions.
